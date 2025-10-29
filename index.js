@@ -1,9 +1,18 @@
-console.log("Hello, World!");
+function changeTitle() {
+    let titleElement = document.querySelector('#title');
+    titleElement.innerHTML = '와ㅏ';
+}
 
-let sum = 0;
-for (let i = 1; i <= 1000; i++) {
-    if (i % 5 === 0 || i % 3 === 0) {
-        sum = sum + i;
-        }
-    }
-console.log(sum);
+let eventtestbutton = document.querySelector('#eventtestbutton');
+eventtestbutton.addEventListener('click', ()  => {
+    let titleElement = document.querySelector('#title');
+    titleElement.innerHTML = '와ㅏ';
+});
+
+let addHandsomButton = document.querySelector('#addHandsomButton');
+addHandsomButton.addEventListener('click',()  => {
+    let ulElement = document.querySelector('ul');
+    let newLi = document.createElement('li');
+    newLi.innerHTML = 'sss';
+    ulElement.appendChild(newLi);
+});
