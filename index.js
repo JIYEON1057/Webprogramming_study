@@ -14,5 +14,5 @@ addHandsomButton.addEventListener('click',()  => {
     let ulElement = document.querySelector('ul');
     let newLi = document.createElement('li');
     newLi.innerHTML = 'sss';
-    ulElement.appendChild(newLi);
 });
+ulElement.appendChild(newLi);

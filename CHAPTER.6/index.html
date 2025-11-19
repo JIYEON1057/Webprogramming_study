@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 번호 생성기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Title Section -->
+        <section class="title-section">
+            <h1>🎱 로또 번호 생성기</h1>
+            <p>행운의 번호를 뽑아보세요!</p>
+        </section>
+
+        <!-- Air Ball Machine Container -->
+        <section class="machine-section" id="heroSection">
+            <div class="airball-machine">
+                <div class="machine-body">
+                    <div class="floating-balls" id="floatingBalls">
+                        <!-- 45 balls will be generated here by JavaScript -->
+                    </div>
+                    <div class="machine-glass"></div>
+                    <!-- Result Display Inside Machine -->
+                    <div class="result-center" id="resultCenter">
+                        <div class="numbers" id="numbers">
+                            <span class="number-ball">?</span>
+                            <span class="number-ball">?</span>
+                            <span class="number-ball">?</span>
+                            <span class="number-ball">?</span>
+                            <span class="number-ball">?</span>
+                            <span class="number-ball">?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generate Button -->
+            <button id="generateBtn" class="generate-btn">번호 생성하기</button>
+            
+            <!-- Result Display Below Machine -->
+            <div id="result" class="result">
+                <div class="result-title">당첨 예상 번호</div>
+                <div class="result-numbers" id="resultNumbers">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="history-section">
+            <h2>📜 생성 히스토리</h2>
+            <button id="clearHistoryBtn" class="clear-btn">히스토리 삭제</button>
+            <div id="historyList" class="history-list">
+                <p class="empty-message">아직 생성된 번호가 없습니다.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
